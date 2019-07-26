@@ -1,6 +1,7 @@
-n = int(input("N:"))
+import sys
+n = int(sys.argv[2])
 
-with open("hightemp.txt", encoding="utf-8") as data_file:
+with open(sys.argv[1], encoding="utf-8") as data_file:
     for index, line in enumerate(data_file):
         if index == n:
             break
