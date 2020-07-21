@@ -11,7 +11,7 @@ def britain():
             data = json.loads(line)
             if data["title"] == "イギリス":
                 return data["text"]
-    return
+    return "not found"
 
 
 if __name__ == "__main__":
